@@ -1,5 +1,5 @@
 # Reflection App
-チャット形式でYFTTで振り返りを行うためのiOSアプリ
+チャット形式で日々の振り返りを行うためのiOSアプリ
 
 ## DEMO
 ![8co2c-1ea9a](./ui.png)
