@@ -2,7 +2,7 @@
 チャット形式で日々の振り返りを行うためのiOSアプリ
 
 ## DEMO
-![8co2c-1ea9a](./ui.png)
+<img src="ui.png" width="350px">
 
 ## Features
 * EDANの振り返りフォーマットで日々の振り返り
