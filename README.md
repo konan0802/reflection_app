@@ -4,6 +4,8 @@
 ## DEMO
 <img src="ui.png" width="350px">
 
+[Figma](https://www.figma.com/file/Hoqn0h6B3zDAGtcRuOfQGm/YWTReview?node-id=0%3A1)
+
 ## Features
 * EDANの振り返りフォーマットで日々の振り返り
 * iOSアプリのため場所や時間を選ばずに入力が可能
