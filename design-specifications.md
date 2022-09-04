@@ -1,11 +1,21 @@
+# 仕様書
 ## FE
 * Flutter
     * 基本的には入力端末としてのiOSアプリ
 * Googleスプレッドシート
     * 過去の分を含めて一覧で内容を見れるように
 
-## BE
-* Golang
+## BE（API）
+* GET /reflection
+    * date yyyy-mm-dd 日付
+    * threads object[] 振り返り内容
+        * type text タイプ（E,A,C,N）
+        * message text 内容
+* POST /reflection
+    * date yyyy-mm-dd 日付
+    * threads object[] 振り返り内容
+        * type text タイプ（E,A,C,N）
+        * message text 内容
 
 ## Infra
 * Lambda
