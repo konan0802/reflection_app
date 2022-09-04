@@ -20,10 +20,14 @@
 
 
 ## Infra
-* Cloud Functions
+### A案
+* GAS（Google Apps Script）
+
+### B案（A案の速度が出なければ）
+* App Engine
     * API用
         * Flutterからのリクエストに対してのレスポンスを返す
     * 集計用
         * 日次でスプレッドシートにデータをエクスポート
-* Cloud Storage
-    * 月ごとにオブジェクトを作成
+* Cloud Tasks
+    * スプレッドシートへの更新はキューにより非同期で行う
