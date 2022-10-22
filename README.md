@@ -9,7 +9,7 @@
 ## Features
 * 「EASN」という日々の経験から自己を振り返るフォーマットを利用
 * iOS(iPhone SE3, iPad mini6)とWebに対応しているため場所や時間を選ばずに入力が可能
-* スプレッドシートに日次でエクスポートすることにより一覧性を担保
+* Googleスプレッドシートに日次でエクスポートすることにより一覧性を担保
 * （今後は）対話形式のUIに変更して、より”振り返り”の心理的ハードルを下げる
 
 ### ◇EASN
@@ -34,8 +34,10 @@
 ## Architecture
 ### ◇FE
 * Flutter
-* Googleスプレッドシート
 ### ◇BE
-* GAS
+* php(Laravel)
+    * API
+    * バッチ（artisan）
 ### ◇Infra
-* GAS
+* Amazon Lightsail
+    * LAMP
