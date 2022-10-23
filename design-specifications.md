@@ -2,24 +2,27 @@
 ## ◇ FE
 * Flutter
     * 基本的には入力端末としてのiOSアプリ
-* スプレッドシート
-    * 過去の分を含めて一覧で内容を見れるように
 
 ## ◇ BE
 ### API
-* GET /reflection
-    * date yyyy-mm-dd 日付
-    * threads object[] 振り返り内容
-        * type text タイプ（E,A,C,N）
-        * message text 内容
-* POST /reflection
-    * date yyyy-mm-dd 日付
-    * threads object[] 振り返り内容
-        * type text タイプ（E,A,C,N）
-        * message text 内容
-
-### バッチ（Artisan）
-* export-spread-sheet：日次でDBの内容をスプレッドシートにエクスポート
+* **GET /reflection**
+    * **Request**
+        * **since** yyyy-mm-dd リクエスト開始期間
+        * **until** yyyy-mm-dd リクエスト終了期間
+    * **Response**
+        * **data** object[]
+            * **date** yyyy-mm-dd 日付
+            * **threads** object[]
+                * **type** text メッセージ種別（E,A,C,N）
+                * **message** text メッセージ内容
+* **POST /reflection**
+    * **Request**
+        * **date** yyyy-mm-dd 日付
+        * **threads** object[]
+            * **type** text メッセージ種別（E,A,C,N）
+            * **message** text メッセージ内容
+    * **Response**
+        * **result** boolean 成否
 
 ## ◇ DB
 ```sql
