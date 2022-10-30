@@ -34,9 +34,8 @@
 ### ◇FE
 * Flutter
 ### ◇BE
-* php(Laravel)
-    * API
-    * バッチ（artisan）
-### ◇Infra
-* Amazon Lightsail
-    * LAMP
+* Golang
+### ◇DB
+* Lambda
+* API Gateway
+* DynamoDB

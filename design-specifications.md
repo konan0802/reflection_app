@@ -1,7 +1,10 @@
 # 仕様書
 ## ◇ FE
 * Flutter
-    * 基本的には入力端末としてのiOSアプリ
+    * iOSアプリ
+        * iPhone SE3
+        * iPad mini6
+    * Webアプリ
 
 ## ◇ BE
 ### API
@@ -24,7 +27,12 @@
     * **Response**
         * **result** boolean 成否
 
-## ◇ DB
+## ◇ DynamoDB
+| パーティションキー | ソートキー |    属性1      |    属性2     |
+| --------------- | -------- | ------------ | ------------ |
+| 対象日           | 順序      | メッセージ種別 | メッセージ内容 |
+
+※ SQLの場合は
 ```sql
 CREATE TABLE `content` (
   `id` bigint unsigned NOT NULL COMMENT 'ID',
