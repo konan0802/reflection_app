@@ -8,7 +8,7 @@
 
 ## ◇ BE
 ### API
-* **GET /reflection**
+* **GET reflection/get**
     * **Request**
         * **since** yyyy-mm-dd リクエスト開始期間
         * **until** yyyy-mm-dd リクエスト終了期間
@@ -18,7 +18,7 @@
             * **threads** object[]
                 * **type** text メッセージ種別（E,A,C,N）
                 * **message** text メッセージ内容
-* **POST /reflection**
+* **PUT reflection/put**
     * **Request**
         * **date** yyyy-mm-dd 日付
         * **threads** object[]
