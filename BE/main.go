@@ -1,9 +1,12 @@
 package main
 
 import (
+	"log"
+	"os"
 	"reflection_app/handler"
 	"reflection_app/infra"
 	"reflection_app/usecase"
+	"strings"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
@@ -37,5 +40,17 @@ func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 }
 
 func main() {
-	lambda.Start(Handler)
+	if strings.HasPrefix(os.Getenv("AWS_EXECUTION_ENV"), "AWS_Lambda") {
+		lambda.Start(Handler)
+	} else {
+		test := events.APIGatewayProxyRequest{
+			Resource:              "/reflection/get",
+			QueryStringParameters: map[string]string{"test": "aiueo"},
+		}
+
+		_, err := Handler(test)
+		if err != nil {
+			log.Fatal(err)
+		}
+	}
 }
