@@ -1,8 +1,11 @@
 package handler
 
 import (
+	"encoding/json"
 	"fmt"
+	"reflection_app/domain/model"
 	"reflection_app/usecase"
+	"time"
 
 	"github.com/aws/aws-lambda-go/events"
 )
@@ -23,11 +26,18 @@ func NewHandler(usc usecase.Usecase) Handler {
 }
 
 func (hdr handler) GetReflection(request events.APIGatewayProxyRequest) []byte {
-	test2 := request.QueryStringParameters["test"]
-	fmt.Printf("test2: %v\n", test2)
+	param := request.QueryStringParameters
+	since, _ := time.Parse("2006/01/02", param["since"])
+	until, _ := time.Parse("2006/01/02", param["until"])
 
-	b := []byte("GetReflectionTest " + test2 + "??")
-	return b
+	requestGetReflection := model.RequestGetReflection{
+		Since: since,
+		Until: until,
+	}
+	result := hdr.usc.GetReflection(requestGetReflection)
+	fmt.Printf("%+v\n", result)
+	s, _ := json.Marshal(result)
+	return s
 }
 
 func (hdr handler) PutReflection(request events.APIGatewayProxyRequest) []byte {

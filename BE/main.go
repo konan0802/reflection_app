@@ -44,8 +44,11 @@ func main() {
 		lambda.Start(Handler)
 	} else {
 		test := events.APIGatewayProxyRequest{
-			Resource:              "/reflection/get",
-			QueryStringParameters: map[string]string{"test": "aiueo"},
+			Resource: "/reflection/get",
+			QueryStringParameters: map[string]string{
+				"since": "2022-10-01",
+				"until": "2022-10-02",
+			},
 		}
 
 		_, err := Handler(test)

@@ -17,13 +17,13 @@
             * **date** yyyy-mm-dd 日付
             * **threads** object[]
                 * **type** text メッセージ種別（E,A,C,N）
-                * **message** text メッセージ内容
+                * **text** text メッセージ内容
 * **PUT reflection/put**
     * **Request**
         * **date** yyyy-mm-dd 日付
         * **threads** object[]
             * **type** text メッセージ種別（E,A,C,N）
-            * **message** text メッセージ内容
+            * **text** text メッセージ内容
     * **Response**
         * **result** boolean 成否
 
