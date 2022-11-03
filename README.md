@@ -36,9 +36,13 @@
 ### ◇BE
 * Golang
 ### ◇DB
+* DynamoDB
+### ◇Infra
 * Lambda
 * API Gateway
-* DynamoDB
+* Cognito
+
+<img src="drawio.png" width="500px">
 
 ## 参考
 * [AWS Lambda+API Gateway+DynamoDBでCRUD APIを作るのをGolangでやってみた](https://qiita.com/saki-engineering/items/e5cf56301d94ceea3ce0)
