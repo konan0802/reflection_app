@@ -28,18 +28,11 @@
         * **result** boolean 成否
 
 ## ◇ DynamoDB
-| パーティションキー | ソートキー |    属性1      |    属性2     |
-| --------------- | -------- | ------------ | ------------ |
-| 対象日           | 順序      | メッセージ種別 | メッセージ内容 |
-
-※ SQLの場合は
-```sql
-CREATE TABLE `content` (
-  `id` bigint unsigned NOT NULL COMMENT 'ID',
-  `type` smallint unsigned NOT NULL DEFAULT 0 COMMENT 'メッセージ種別',
-  `text` text COMMENT 'メッセージ内容',
-  `sort` smallint unsigned NOT NULL DEFAULT 0 COMMENT '1日ごとのメッセージの順番',
-  `date` date NOT NULL DEFAULT '2006-01-01' COMMENT '対象日',
-  PRIMARY KEY (`id`, `date`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-```
+### Usersテーブル
+| PK     | -           | -     | -      |
+| ------ | ----------- | ----- | ------ |
+| UserId | CognitoName | Email | Status |
+### Reflectionテーブル
+| PK     | SK   | -     | -    | -    |
+| ------ | ---- | ----- | ---- | ---- |
+| UserId | Date | Order | Type | Text |
