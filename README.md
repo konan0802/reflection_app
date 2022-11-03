@@ -46,3 +46,5 @@
 
 ## 参考
 * [AWS Lambda+API Gateway+DynamoDBでCRUD APIを作るのをGolangでやってみた](https://qiita.com/saki-engineering/items/e5cf56301d94ceea3ce0)
+* [Cognito でサインアップしたユーザーの情報を DynamoDB に保存するには？](https://zenn.dev/tatsurom/articles/cognito-data-to-dynamodb)
+* [Providerで状態管理](https://www.flutter-study.dev/firebase-app/provider)
