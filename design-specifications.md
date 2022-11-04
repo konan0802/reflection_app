@@ -18,6 +18,8 @@
             * **threads** object[]
                 * **type** text メッセージ種別（E,A,C,N）
                 * **text** text メッセージ内容
+    * **Header**
+        * **Authorization** ID_TOKEN（Cognito ID Token）
 * **PUT reflection/put**
     * **Request**
         * **date** yyyy-mm-dd 日付
@@ -26,6 +28,8 @@
             * **text** text メッセージ内容
     * **Response**
         * **result** boolean 成否
+    * **Header**
+        * **Authorization** ID_TOKEN（Cognito ID Token）
 
 ## ◇ DynamoDB
 ### Usersテーブル
