@@ -44,7 +44,14 @@
 
 <img src="drawio.png" width="500px">
 
-## 参考
+## Deploy
+### ◇ BE
+1. **ECRへのプッシュ**<br>
+    ⇒ ECRのプッシュコマンドを参考
+2. **Lambdaへのデプロイ**<br>
+    ⇒ イメージタブの［新しいイメージをデプロイ］を押下
+
+## Ref
 * [AWS Lambda+API Gateway+DynamoDBでCRUD APIを作るのをGolangでやってみた](https://qiita.com/saki-engineering/items/e5cf56301d94ceea3ce0)
 * [Cognito でサインアップしたユーザーの情報を DynamoDB に保存するには？](https://zenn.dev/tatsurom/articles/cognito-data-to-dynamodb)
 * [Providerで状態管理](https://www.flutter-study.dev/firebase-app/provider)

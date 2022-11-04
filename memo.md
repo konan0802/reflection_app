@@ -12,3 +12,5 @@ $ aws cognito-idp confirm-sign-up --client-id ${CLIENT_ID} --username ${USER_EMA
 ```bash
 $ aws cognito-idp admin-initiate-auth --user-pool-id ${USER_POOL_ID} --client-id ${CLIENT_ID} --auth-flow ADMIN_USER_PASSWORD_AUTH --auth-parameters USERNAME=${USER_EMAIL},PASSWORD=${PASSWORD} --region ap-northeast-1
 ```
+
+## Flutter
