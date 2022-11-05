@@ -22,9 +22,9 @@ func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	// ルーティングの設定
 	var res []byte
 	switch request.Resource {
-	case "/reflection/get":
+	case "/thread/get":
 		res = hdr.GetThread(request)
-	case "/reflection/put":
+	case "/thread/put":
 		res = hdr.PutThread(request)
 	default:
 		return events.APIGatewayProxyResponse{
