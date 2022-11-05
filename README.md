@@ -1,4 +1,4 @@
-# Reflection App
+# Reflection App（Bloomer）
 チャット形式で日々の振り返りを行うためのiOSアプリ
 
 ## DEMO
