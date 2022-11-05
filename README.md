@@ -43,6 +43,7 @@
 
 ## Ref
 * [#0 Flutter の設計を決める](https://wasabeef.medium.com/0-flutter-%E3%81%AE%E8%A8%AD%E8%A8%88%E3%82%92%E6%B1%BA%E3%82%81%E3%82%8B-4c6df9a77d67)
+* [【Flutter】アプリ全体のアーキテクチャを0から考えて作り直した話](https://zenn.dev/chooyan/articles/eefc76dbd2ba25)
 * [バックエンドがFirebaseだけでiOSアプリは作れるのか？](https://qiita.com/jumbOrNot/items/646e0c6b72ab47f452f5)
 * [Firebaseでアプリを開発するならClient Side Joinを前提にすること](https://qiita.com/1amageek/items/afc1c0ceb15ffc2372fd)
 * [Firebase Realtime DBを実践投入するにあたって考えたこと](https://qiita.com/1amageek/items/64bf85ec2cf1613cf507)
