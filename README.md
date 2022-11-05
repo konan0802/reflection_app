@@ -42,4 +42,7 @@
 <img src="drawio.png" width="500px">
 
 ## Ref
+* [バックエンドがFirebaseだけでiOSアプリは作れるのか？](https://qiita.com/jumbOrNot/items/646e0c6b72ab47f452f5)
+* [Firebaseでアプリを開発するならClient Side Joinを前提にすること](https://qiita.com/1amageek/items/afc1c0ceb15ffc2372fd)
+* [Firebase Realtime DBを実践投入するにあたって考えたこと](https://qiita.com/1amageek/items/64bf85ec2cf1613cf507)
 * [Providerで状態管理](https://www.flutter-study.dev/firebase-app/provider)
