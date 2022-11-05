@@ -94,7 +94,7 @@
 		</data>
 		<key>Frameworks/AWSMobileClient.framework/AWSMobileClient</key>
 		<data>
-		nsrTExCnwqiFaZjJfjTwfXAfVt0=
+		P3pI3YPfqU2IljP4cEO3Q/PawoE=
 		</data>
 		<key>Frameworks/AWSMobileClient.framework/Info.plist</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		5CSjUB9vwsdK8ihPPC3s7Bt2BVw=
+		SPoDJpzWRj/l9+nm11mqPI6B/3g=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -150,7 +150,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		vAPNg2h0PWlgB37jZGJv4+cyoNU=
+		r83asRsbA5T1RC0Pxlm5pHierbk=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		IFFCQRCsKLuXjh909G+JtImv8Y8=
+		HwrakmulEW1jdvq+FRW8OM2SlW8=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/amplify_authenticator/assets/social-buttons/SocialIcons.ttf</key>
 		<data>
@@ -497,7 +497,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tSGKVzU0L4vZCyli5UYbtugD0tNV3GRpeLC3ueLkQmA=
+			DDQdN3iu9pE9S2WLmUBHdPmQHowNsXfIGq5VBdjwJ4U=
 			</data>
 		</dict>
 		<key>Frameworks/AWSMobileClient.framework/Info.plist</key>
@@ -581,7 +581,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			xg52sHNAYsahtbMNBJy27+k0H9tLnWMeEGeixFqppos=
+			Q9UrJDvcl56B5C2FPAYhzqTIUXm4ZeOiT8mS2uc5vTc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -595,7 +595,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			PDwzk9NatVQHnTv/hFtS54pC/FdMZF3vwgrzId0qozI=
+			35iuCbRwg/0+1IDNU57Ky9K5w5sip82z72B23LLc+7Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -637,7 +637,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wDFNfsD3KVAbEF/eYXohPvo+/kanQFFSxsDu3DnpkgY=
+			XDALmmw1yYBqZHzXnEqAyrsXSE9IT7aammSwIhURL8w=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/amplify_authenticator/assets/social-buttons/SocialIcons.ttf</key>

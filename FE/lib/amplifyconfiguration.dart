@@ -12,7 +12,10 @@ const amplifyconfig = '''{
         "Auth": {
           "Default": {
             "authenticationFlowType": "USER_SRP_AUTH",
-            "socialProviders": [],
+            "socialProviders": [
+              "GOOGLE",
+              "FACEBOOK"
+            ],
             "usernameAttributes": [],
             "signupAttributes": [
               "email"

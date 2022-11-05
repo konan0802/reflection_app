@@ -4,6 +4,7 @@ import 'package:amplify_flutter/amplify_flutter.dart';
 import 'package:flutter/material.dart';
 
 import 'amplifyconfiguration.dart';
+import 'resolver.dart';
 
 class SignPage extends StatefulWidget {
   const SignPage({Key? key}) : super(key: key);
@@ -34,6 +35,7 @@ class _SignPageState extends State {
   @override
   Widget build(BuildContext context) {
     return Authenticator(
+      stringResolver: stringResolver,
       child: MaterialApp(
         builder: Authenticator.builder(),
         home: Scaffold(
