@@ -2,21 +2,21 @@ package model
 
 import "time"
 
-type Reflection struct {
+type Refl struct {
 	Type string `json:"type"`
 	Text string `json:"text"`
 }
 
-type DaysReflections struct {
-	Date        string       `json:"date"`
-	Reflections []Reflection `json:"reflections"`
+type Thread struct {
+	Date  string `json:"date"`
+	Refls []Refl `json:"refls"`
 }
 
-type RequestGetReflection struct {
+type RequestGetThread struct {
 	Since time.Time `json:"since"`
 	Until time.Time `json:"until"`
 }
 
-type ResponseGetReflection struct {
-	Data []DaysReflections `json:"data"`
+type ResponseGetThread struct {
+	Data []Thread `json:"data"`
 }

@@ -11,8 +11,8 @@ import (
 )
 
 type Handler interface {
-	GetReflection(events.APIGatewayProxyRequest) []byte
-	PutReflection(events.APIGatewayProxyRequest) []byte
+	GetThread(events.APIGatewayProxyRequest) []byte
+	PutThread(events.APIGatewayProxyRequest) []byte
 }
 
 type handler struct {
@@ -25,22 +25,22 @@ func NewHandler(usc usecase.Usecase) Handler {
 	}
 }
 
-func (hdr handler) GetReflection(request events.APIGatewayProxyRequest) []byte {
+func (hdr handler) GetThread(request events.APIGatewayProxyRequest) []byte {
 	param := request.QueryStringParameters
 	since, _ := time.Parse("2006/01/02", param["since"])
 	until, _ := time.Parse("2006/01/02", param["until"])
 
-	requestGetReflection := model.RequestGetReflection{
+	requestGetThread := model.RequestGetThread{
 		Since: since,
 		Until: until,
 	}
-	result := hdr.usc.GetReflection(requestGetReflection)
+	result := hdr.usc.GetThread(requestGetThread)
 	fmt.Printf("%+v\n", result)
 	s, _ := json.Marshal(result)
 	return s
 }
 
-func (hdr handler) PutReflection(request events.APIGatewayProxyRequest) []byte {
-	b := []byte("PutReflectionTest")
+func (hdr handler) PutThread(request events.APIGatewayProxyRequest) []byte {
+	b := []byte("PutThreadTest")
 	return b
 }

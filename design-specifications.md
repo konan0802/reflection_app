@@ -8,7 +8,7 @@
 
 ## ◇ BE
 ### API
-* **GET reflection/get**
+* **GET thread/get**
     * **Request**
         * **since** yyyy-mm-dd リクエスト開始期間
         * **until** yyyy-mm-dd リクエスト終了期間
@@ -20,7 +20,7 @@
                 * **text** text メッセージ内容
     * **Header**
         * **Authorization** ID_TOKEN（Cognito ID Token）
-* **PUT reflection/put**
+* **PUT thread/put**
     * **Request**
         * **date** yyyy-mm-dd 日付
         * **threads** object[]
@@ -33,10 +33,14 @@
 
 ## ◇ DynamoDB
 ### Usersテーブル
-| PK     | -           | -     | -      |
-| ------ | ----------- | ----- | ------ |
-| UserId | CognitoName | Email | Status |
-### Reflectionテーブル
+| PK          | -      | -     | -      | -     |
+| ----------- | ------ | ----- | ------ | ----- |
+| CognitoName | UserId | Email | Status | Types |
+### Reflsテーブル
 | PK     | SK   | -     | -    | -    |
 | ------ | ---- | ----- | ---- | ---- |
 | UserId | Date | Order | Type | Text |
+
+## 命名
+* Refl：[Type + Text] ※メッセージ種別と内容の固まり
+* Thread：[Date + Refls] ※特定日のRefの固まり

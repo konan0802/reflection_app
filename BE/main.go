@@ -23,9 +23,9 @@ func Handler(request events.APIGatewayProxyRequest) (events.APIGatewayProxyRespo
 	var res []byte
 	switch request.Resource {
 	case "/reflection/get":
-		res = hdr.GetReflection(request)
+		res = hdr.GetThread(request)
 	case "/reflection/put":
-		res = hdr.PutReflection(request)
+		res = hdr.PutThread(request)
 	default:
 		return events.APIGatewayProxyResponse{
 			Body:       `Error: 404 not found`,

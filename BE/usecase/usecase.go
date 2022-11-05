@@ -6,7 +6,7 @@ import (
 )
 
 type Usecase interface {
-	GetReflection(model.RequestGetReflection) model.ResponseGetReflection
+	GetThread(model.RequestGetThread) model.ResponseGetThread
 }
 
 type usecase struct {
@@ -19,20 +19,20 @@ func NewUsecase(drp repository.DynamoDBRepository) Usecase {
 	}
 }
 
-func (usc usecase) GetReflection(req model.RequestGetReflection) model.ResponseGetReflection {
-	reflection := model.Reflection{
+func (usc usecase) GetThread(req model.RequestGetThread) model.ResponseGetThread {
+	reflection := model.Refl{
 		Type: "a",
 		Text: "aiueo",
 	}
-	reflections := []model.Reflection{reflection}
+	reflections := []model.Refl{reflection}
 
-	daysReflections := model.DaysReflections{
-		Date:        "2022-10-31",
-		Reflections: reflections,
+	daysThread := model.Thread{
+		Date:  "2022-10-31",
+		Refls: reflections,
 	}
-	data := []model.DaysReflections{daysReflections}
+	data := []model.Thread{daysThread}
 
-	return model.ResponseGetReflection{
+	return model.ResponseGetThread{
 		Data: data,
 	}
 }
