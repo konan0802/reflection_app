@@ -33,27 +33,13 @@
 ## Architecture
 ### ◇FE
 * Flutter
-### ◇BE
-* Golang
 ### ◇DB
-* DynamoDB
+* Cloud Firestore
 ### ◇Infra
-* Lambda
-* API Gateway
-* Cognito
+* Firebase Authentication
+* Firebase Hosting
 
 <img src="drawio.png" width="500px">
 
-## Deploy
-### ◇ BE
-1. **ECRへのプッシュ**<br>
-    ⇒ ECRのプッシュコマンドを参考
-2. **Lambdaへのデプロイ**<br>
-    ⇒ イメージタブの［新しいイメージをデプロイ］を押下
-
 ## Ref
-* [AWS Lambda+API Gateway+DynamoDBでCRUD APIを作るのをGolangでやってみた](https://qiita.com/saki-engineering/items/e5cf56301d94ceea3ce0)
-* [Cognito でサインアップしたユーザーの情報を DynamoDB に保存するには？](https://zenn.dev/tatsurom/articles/cognito-data-to-dynamodb)
 * [Providerで状態管理](https://www.flutter-study.dev/firebase-app/provider)
-* [プログラミングせずにCognitoで新規ユーザー登録＆サインインを試してみる](https://dev.classmethod.jp/articles/sign-up-and-sign-in-by-cognito-with-awscli/)
-* [FlutterとAmazon Cognitoでログイン機能を実装してみた](https://dev.classmethod.jp/articles/flutter-cognito/)
