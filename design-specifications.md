@@ -1,19 +1,21 @@
 # 仕様書
 ## ◇ Cloud Firestore
 ### Usersテーブル
-| PK          | -      | -     | -      | -    | -               |
-| ----------- | ------ | ----- | ------ | ---- | --------------- |
-| CognitoName | UserId | Email | Status | Type | TypeDescription |
+| PK          | -      | -     | -      |
+| ----------- | ------ | ----- | ------ |
+| CognitoName | UserId | Email | Status |
 
-・Type: やったこと, 分かったこと, 次にやること<br>
-・TypeDescription: 
+### Typeテーブル
+| PK     | -    | -           |
+| ------ | ---- | ----------- |
+| UserId | Type | Description |
 
 ### Reflsテーブル
 | PK     | SK   | -     | -    | -    |
 | ------ | ---- | ----- | ---- | ---- |
 | UserId | Date | Order | Type | Text |
 
-### Transitionsテーブル
+### （ver2）Transitionsテーブル
 | PK     | SK   | -       |
 | ------ | ---- | ------- |
 | UserId | Date | WordCnt |
